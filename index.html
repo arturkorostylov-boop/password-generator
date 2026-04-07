@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script-2.js"></script>
+    <!-- <script defer src="./test.js"></script> -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="iosevka-charon-medium">
+    <h1 class="iosevka-charon-bold">Password generator</h1>
+    <div class="wrapper">
+        <div class="field">
+            <input type="text" name="password" id="password" min="6" max="32" value="">
+            <button class="copy"><svg width="55" height="55" viewBox="0 0 55 55" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M37.3147 2.83081H20.6332C18.1514 2.83081 16.1332 4.85131 16.1332 7.33081V38.8308C16.1332 41.3126 18.1514 43.3308 20.6332 43.3308H43.1332C45.6149 43.3308 47.6332 41.3126 47.6332 38.8308V13.1493L37.3147 2.83081ZM43.1354 38.8308H20.6332V7.33081H34.1332V16.3308H43.1332L43.1354 38.8308Z"
+                        fill="#7DA9AE" />
+                    <path
+                        d="M11.6332 11.8308H7.13318V47.8308C7.13318 50.3126 9.15143 52.3308 11.6332 52.3308H38.6332V47.8308H11.6332V11.8308Z"
+                        fill="#7DA9AE" />
+                </svg></button>
+        </div>
+        <div class="field">
+            <input type="range" name="length" id="length" min="6" max="32" step="1" value="12">
+            <span id="lengthtext">20</span> symbols
+        </div>
+        <div class="field">
+            <input type="checkbox" name="symbols" id="symbols" checked="true">
+            <label for="symbols"><strong>Use symbol</strong>(@#$%)</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" name="number" id="number" checked="true">
+            <label for="number"><strong>Use number</strong>(2 3 4 5...9)</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" name="lowercase" id="lowercase" checked="true">
+            <label for="lowercase"><strong>Use lowercase letters</strong>(a b c d)</label>
+        </div>
+        <div class="field">
+            <input type="checkbox" name="uppercase" id="uppercase" checked="true">
+            <label for="uppercase"><strong>Use uppercase letters</strong>(A B C D)</label>
+        </div>
+        <div class="field">
+            <!-- il1ILo0 -->
+            <input type="checkbox" name="similar" id="similar" checked="true">
+            <label for="similar"><strong>Use similar characters</strong>(il1ILo0)</label>
+        </div>
+    </div>
+</body>
+
+</html>

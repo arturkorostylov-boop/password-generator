@@ -1,0 +1,65 @@
+.iosevka-charon-medium {
+    font-family: "Iosevka Charon", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.iosevka-charon-bold {
+    font-family: "Iosevka Charon", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.wrapper {
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    padding: 20px;
+}
+
+.field {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 24px;
+}
+
+input#password {
+    height: 55px;
+    width: 100%;
+    font-size: 36px;
+    padding-inline: 10px;
+}
+
+button {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    border: none;
+}
+
+button:disabled svg path {
+    fill: red;
+}
+
+svg {
+    width: 40px;
+    height: 40px;
+}
+
+/* input:not([type='text']){
+    outline: 2px solid red;
+} */
